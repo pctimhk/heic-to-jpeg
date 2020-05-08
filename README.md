@@ -10,6 +10,6 @@ The following command will convert all HEIC images in the mounted volume specifi
 
 Enhance and support the following feature
 1. separate input and output folder
-2. output folder keep the folder structure or output in root folder
+2. output the file as same as input folder structure
 
 Based on https://github.com/monostream/tifig
