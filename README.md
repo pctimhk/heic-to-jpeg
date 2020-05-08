@@ -8,7 +8,7 @@ The following command will convert all HEIC images in the mounted volume specifi
 
 `docker run -v /path/to/input/:/input/ /path/to/output/:/output/ pctimhk/heic-to-jpeg`
 
-Enhance the existing version to 
+Enhance and support the following feature
 1. separate input and output folder
 2. output folder keep the folder structure or output in root folder
 
