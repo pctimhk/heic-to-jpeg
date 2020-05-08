@@ -1,6 +1,6 @@
 #!/bin/bash
 
-input=/photos/
+input=/input/
 output=/output
 
 find $input -name '*.heic' -or -name '*.HEIC'| while read i; do
