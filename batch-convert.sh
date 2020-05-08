@@ -17,6 +17,6 @@ find $input -name '*.heic' -or -name '*.HEIC'| while read i; do
         /tifig/build/tifig -v -p "$i" $outputfullpath
         #touch -r "$i" $outputfullpath
     else
-        echo $outputfullpath already exists"
+        echo "$outputfullpath already exists"
     fi
 done
