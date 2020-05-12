@@ -11,7 +11,7 @@ find $input -name '*.heic' -or -name '*.HEIC'| while read i; do
     folder="$(dirname $i)"
     
     outputfolder="$output$folder"
-    outputfullpath="$outputfolder$filebasename.jpg"
+    outputfullpath="$outputfolder/$filebasename.jpg"
     
     if [ ! -f $outputfullpath ]; then
         if [ ! -d $outputfolder ]; then
@@ -23,5 +23,6 @@ find $input -name '*.heic' -or -name '*.HEIC'| while read i; do
         #touch -r "$i" $outputfullpath
     else
         echo "$outputfullpath already exists"
+        break
     fi
 done
